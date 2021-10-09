@@ -58,13 +58,13 @@ outline: none;
 } */
 @media(max-width:700px){
     .text-box h1{
-        font-size: 25px;
+        font-size: 24px !important;
         word-spacing: 1px;
     }
     .text-box p{
-        line-height: 20px;
-        word-spacing: 1px;
-        font-size: 15px;
+        line-height: 19px;
+        word-spacing: 10px;
+        font-size: 20px;
     }
 }
 
