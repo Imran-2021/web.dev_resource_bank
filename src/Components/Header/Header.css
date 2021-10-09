@@ -1,0 +1,79 @@
+.header{
+    min-height: 90vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), */
+    /* url(Images/background.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-in{
+    width: 90%;
+    color: #fff;
+    margin: auto;
+}
+/* .btn{
+    display: inline-block;
+    background:#fbc531;
+    color: #fff;
+    padding: 15px 15px;
+    margin: 30px 0;
+    border-radius: 10px;
+    transition:background 2s;
+    text-decoration: none;
+    font-size: 35px;
+  }
+  .btn:hover{
+    background:#563434 ;
+  } */
+  .text-box{
+    width: 90%;
+    /* color:#fff; */
+    
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+font-size: 60px;
+word-spacing: 5px;
+color:#fbc531;
+text-shadow: 13px 4px 23px rgba(0,0,0,0.6);
+}
+.text-box p{
+margin: 10px 0px 40px;
+font-size: 22px;
+line-height: 40px;
+word-spacing: 5px;
+color: #e1b12c;
+text-shadow: 7px -2px 11px rgba(0,0,0,0.6);
+}
+/* .text-box button{
+padding:15px 20px;
+cursor : pointer;
+border: none;
+outline: none;
+} */
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+/* button design */
+.btn{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 20px;
+    border: 1px solid rgb(0, 26, 255);
+    transition:1.5s;
+    background:#353b48;
+    border-radius:5px
+}
+.btn:hover{
+    background-color:#192a56;
+    padding: 15px 28px;
+    color: #ddd;
+}
