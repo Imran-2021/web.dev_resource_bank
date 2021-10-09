@@ -1,0 +1,15 @@
+.single-resource{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 55, 250, 0.6),rgba(4,9,30,0.9)),url(https://i.pinimg.com/originals/4a/94/26/4a94268541d7a0ed95a8be5138e8a288.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.single-resource-in{
+    width: 90%;
+    color: #fbc531;
+    margin: auto;
+    font-size: 25px;
+}
