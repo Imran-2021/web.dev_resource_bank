@@ -2,7 +2,7 @@
   width: 8px;
 }
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(transparent,#001aff);
+  background: linear-gradient(transparent,#ff00ea);
   border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover{
