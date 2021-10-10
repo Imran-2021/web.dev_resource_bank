@@ -1,14 +1,51 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link,useParams } from 'react-router-dom';
+import FakeData from '../../FakeData/FakeData';
 import "./Resource.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 const Resource = () => {
+    const {idd} = useParams();
+    // console.log(idd);
+    const [data,setData]=useState([])
+    // console.log(data);
+    useEffect(()=>{
+       let dat=FakeData.filter(x=>x.name==`${idd}`);
+       setData(dat[0]);
+    },[])
+    console.log(data);
+    console.log(data?.documentations?.[0].w3);
     return (
-        <div className="single-resource">
+        <section className="single-resource">
             <div className="single-resource-in">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque in eius id veniam, cupiditate accusantium optio dolorem explicabo accusamus ad facere nemo ullam quos. Voluptatum explicabo suscipit dolorum voluptates nulla.</p>
-                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum pariatur cumque facere expedita similique dicta recusandae vero nesciunt voluptas voluptate dolorem amet nemo, et earum impedit ratione ut dolor libero nihil harum eaque. Saepe repellat deleniti atque incidunt dolorem voluptatem recusandae consequuntur deserunt mollitia labore, magni laborum laudantium quo ipsa numquam reprehenderit quos cupiditate excepturi ipsum itaque illo id minus alias. Quaerat cumque assumenda atque vero, iste laudantium omnis hic repudiandae accusantium ratione autem harum dolorum debitis asperiores eius! Officiis, dolore. Pariatur adipisci ab veritatis, doloremque veniam est mollitia nobis, tenetur explicabo dolorum illum a non reiciendis cumque dolore. Cum quos inventore, suscipit explicabo doloribus, minima ratione optio architecto maiores nesciunt est cupiditate odit eveniet accusantium molestias consequuntur nihil maxime. At ad dolores mollitia veniam, culpa maxime rerum. At provident dignissimos voluptatum voluptates blanditiis possimus animi voluptatem, minus eius, sit libero placeat, explicabo ab. Accusamus maiores magni reiciendis ipsam nihil architecto omnis tempore! Beatae illum debitis voluptatibus amet minus, enim quibusdam minima aut, nulla facere dolorum sint deserunt necessitatibus dolores, obcaecati unde officia fuga quis eveniet ipsa quam. Non molestiae neque maxime suscipit, voluptatibus voluptas atque doloribus, ex, temporibus cumque expedita est qui dolores deleniti! Deleniti, consectetur! Maiores optio nemo maxime ad dolorum, earum voluptatem molestias mollitia. Quod, modi dolores dolorem nisi nulla amet dolorum explicabo excepturi maxime fuga alias iusto et eveniet. Labore temporibus dolorum debitis ducimus consectetur explicabo, corrupti a dolore ullam sint repudiandae quod itaque alias officiis laudantium quaerat esse similique iusto aperiam fuga. Similique cumque suscipit tempore ducimus sit reprehenderit maxime laudantium dolores eius voluptates reiciendis molestias quaerat quod placeat, possimus dolorem asperiores veniam distinctio doloribus! Distinctio esse eaque molestiae sint voluptatum perferendis cum, ab magni odio sapiente voluptatem culpa minima impedit consectetur tenetur fugiat quaerat voluptatibus veritatis ea dicta eum. Modi nemo nihil accusamus tempore?</small>
-                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum pariatur cumque facere expedita similique dicta recusandae vero nesciunt voluptas voluptate dolorem amet nemo, et earum impedit ratione ut dolor libero nihil harum eaque. Saepe repellat deleniti atque incidunt dolorem voluptatem recusandae consequuntur deserunt mollitia labore, magni laborum laudantium quo ipsa numquam reprehenderit quos cupiditate excepturi ipsum itaque illo id minus alias. Quaerat cumque assumenda atque vero, iste laudantium omnis hic repudiandae accusantium ratione autem harum dolorum debitis asperiores eius! Officiis, dolore. Pariatur adipisci ab veritatis, doloremque veniam est mollitia nobis, tenetur explicabo dolorum illum a non reiciendis cumque dolore. Cum quos inventore, suscipit explicabo doloribus, minima ratione optio architecto maiores nesciunt est cupiditate odit eveniet accusantium molestias consequuntur nihil maxime. At ad dolores mollitia veniam, culpa maxime rerum. At provident dignissimos voluptatum voluptates blanditiis possimus animi voluptatem, minus eius, sit libero placeat, explicabo ab. Accusamus maiores magni reiciendis ipsam nihil architecto omnis tempore! Beatae illum debitis voluptatibus amet minus, enim quibusdam minima aut, nulla facere dolorum sint deserunt necessitatibus dolores, obcaecati unde officia fuga quis eveniet ipsa quam. Non molestiae neque maxime suscipit, voluptatibus voluptas atque doloribus, ex, temporibus cumque expedita est qui dolores deleniti! Deleniti, consectetur! Maiores optio nemo maxime ad dolorum, earum voluptatem molestias mollitia. Quod, modi dolores dolorem nisi nulla amet dolorum explicabo excepturi maxime fuga alias iusto et eveniet. Labore temporibus dolorum debitis ducimus consectetur explicabo, corrupti a dolore ullam sint repudiandae quod itaque alias officiis laudantium quaerat esse similique iusto aperiam fuga. Similique cumque suscipit tempore ducimus sit reprehenderit maxime laudantium dolores eius voluptates reiciendis molestias quaerat quod placeat, possimus dolorem asperiores veniam distinctio doloribus! Distinctio esse eaque molestiae sint voluptatum perferendis cum, ab magni odio sapiente voluptatem culpa minima impedit consectetur tenetur fugiat quaerat voluptatibus veritatis ea dicta eum. Modi nemo nihil accusamus tempore?</small>
+
+            <p>TOPIC - {idd}</p>
+           
+            <h4>{data.description}</h4>
+            <h3>Basic Key- </h3>
+            {/* <p className="as">{data.keywords}</p> */}
+           <div className="as">
+           {
+                data?.keywords?.map((x,y)=><div className="ass">
+               <div>
+                 {x}
+                </div>
+            </div>)
+            }
+           </div>
+            <h3>Documentations -</h3>
+            {/* <p>{data.documentations[0].link ||"lorem"}</p> */}
+           {/* <p>{data?.documentations?.[0]}</p> */}
+           {
+               data?.documentations?.map((x,y)=><div>
+                   <p>{y+1} <FontAwesomeIcon style={{color:"black",fontSize:"15px",color:"blue"}} icon={faArrowRight} /> <a className='ahover' target="_blank" rel="noreferrer" href={x}>{x}</a></p>
+                   
+               </div>)
+           }
+            <h3>Tutorial - </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, cupiditate? Accusamus, ab quasi vero possimus fuga repellat ipsam numquam enim, provident perferendis explicabo! Quaerat quasi nostrum maxime repellendus, quisquam sed?</p>
             </div>
-        </div>
+        </section >
     );
 };
 

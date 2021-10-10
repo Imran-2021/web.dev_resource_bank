@@ -9,6 +9,7 @@ import Header from "./Components/Header/Header";
 import NavBar from './Components/NavBar/NavBar';
 import Resource from "./Components/Resource/Resource";
 import Resources from "./Components/Resources/Resources";
+import Hello from "./FakeData/hello";
 
 function App() {
   return (
