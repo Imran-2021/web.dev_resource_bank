@@ -27,7 +27,9 @@ const NavBar = () => {
                     <li><Link to="/inverviewQ">INTERVIEW-Q</Link></li>
                     <li><Link to="/blogs">BLOGS</Link></li>
                     <li><Link to="/basic">BASIC</Link></li>
+                    <li><Link to="/command">NPM / YARN</Link></li>
                     <li><Link to="/about">ABOUT</Link></li>
+                    <li><Link to="/notes">NOTES</Link></li>
                     {/* <li><Link to="/contact">CONTACT</Link></li> */}
                     <li><Link to="/login">SIGN IN</Link></li>
                     <li><Link to="/admin">ADMIN</Link></li>

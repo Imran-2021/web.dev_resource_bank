@@ -61,7 +61,7 @@
     }
   }
   
-  @media(max-width:1200px) {
+  @media(max-width:1350px) {
     .nav-links ul li{
         display:block;
     }

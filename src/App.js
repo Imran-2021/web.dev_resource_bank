@@ -13,6 +13,8 @@ import Errors from "./Components/Errors/Errors";
 import Header from "./Components/Header/Header";
 import InterviewQ from "./Components/Interview-Q/InterviewQ";
 import NavBar from './Components/NavBar/NavBar';
+import Notes from "./Components/Notes/Notes";
+import NpmOrYarn from "./Components/NPMorYARN/NpmOrYarn";
 import Resource from "./Components/Resource/Resource";
 import Resources from "./Components/Resources/Resources";
 import Signn from "./Components/SignIn/Sign";
@@ -31,6 +33,9 @@ function App() {
           <Route path="/admin">
            <Admin/>
           </Route>
+          <Route path="/command">
+           <NpmOrYarn/>
+          </Route>
           <Route path="/basic">
            <Basic/>
           </Route>
@@ -45,6 +50,9 @@ function App() {
           </Route>
           <Route path="/login">
            <Signn/>
+          </Route>
+          <Route path="/notes">
+           <Notes/>
           </Route>
           <Route path="/inverviewQ">
            <InterviewQ/>

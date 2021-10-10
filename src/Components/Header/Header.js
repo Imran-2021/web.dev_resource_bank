@@ -5,6 +5,7 @@ import Basic from '../Basic/Basic';
 import Blogs from '../Blogs/Blogs';
 import Errors from '../Errors/Errors';
 import InterviewQ from '../Interview-Q/InterviewQ';
+import NpmOrYarn from '../NPMorYARN/NpmOrYarn';
 import Resources from '../Resources/Resources';
 import Signn from '../SignIn/Sign';
 import './Header.css'
@@ -26,6 +27,7 @@ const Header = () => {
         <InterviewQ/>
         <Blogs/>
         <Basic/>
+        <NpmOrYarn/>
         <Signn/>
         <About/>
         <div>

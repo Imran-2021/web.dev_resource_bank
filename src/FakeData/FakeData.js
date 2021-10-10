@@ -158,24 +158,24 @@ const FakeData = [
             ["https://www.w3schools.com/html/default.asp","https://www.w3schools.com/html/default.asp"]
 
     },
-    {
-        "id":19,
-        "name":"NPM",
-        "description":" Node package manager,Bring the best of open source to you, your team, and your company",
-        "keywords":"p,b,strong,padding,margin,flex,grid",
-        "documentations":
-            ["https://www.w3schools.com/html/default.asp","https://www.w3schools.com/html/default.asp"]
+    // {
+    //     "id":19,
+    //     "name":"NPM",
+    //     "description":" Node package manager,Bring the best of open source to you, your team, and your company",
+    //     "keywords":"p,b,strong,padding,margin,flex,grid",
+    //     "documentations":
+    //         ["https://www.w3schools.com/html/default.asp","https://www.w3schools.com/html/default.asp"]
 
-    },
-    {
-        "id":20,
-        "name":"YARN-PKG",
-        "description":" Yarn is a package manager that doubles down as project manager.",
-        "keywords":"p,b,strong,padding,margin,flex,grid",
-        "documentations":
-        ["https://www.w3schools.com/html/default.asp","https://www.w3schools.com/html/default.asp"]
+    // },
+    // {
+    //     "id":20,
+    //     "name":"YARN-PKG",
+    //     "description":" Yarn is a package manager that doubles down as project manager.",
+    //     "keywords":"p,b,strong,padding,margin,flex,grid",
+    //     "documentations":
+    //     ["https://www.w3schools.com/html/default.asp","https://www.w3schools.com/html/default.asp"]
 
-    },
+    // },
     {
         "id":21,
         "name":"VS CODE",
