@@ -4,7 +4,7 @@ const Notes = () => {
 // const date = `${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`
 const [note,setNotes]=useState([])
 useEffect(()=>{
-    fetch("http://localhost:3002/note")
+    fetch("https://salty-garden-38529.herokuapp.com/note")
     .then(response => response.json())
     .then(data => {
         console.log(data);
@@ -13,7 +13,7 @@ useEffect(()=>{
 },[])
 const [note2,setNotes2]=useState([])
 useEffect(()=>{
-    fetch("http://localhost:3002/note2")
+    fetch("https://salty-garden-38529.herokuapp.com/note2")
     .then(response => response.json())
     .then(data => {
         console.log(data);

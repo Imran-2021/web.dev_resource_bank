@@ -9,7 +9,7 @@ const Admin = () => {
         const slink=document.getElementById("slink").value;
         const hints=document.getElementById("hints").value;
         const info={err,slink,hints}
-       fetch("http://localhost:3002/addData1",{
+       fetch("https://salty-garden-38529.herokuapp.com/addData1",{
         method: 'POST',
         body: JSON.stringify({info}),
         headers: {
@@ -26,7 +26,7 @@ const Admin = () => {
         const linke=document.getElementById("linke").value;
         const hintss=document.getElementById("hintss").value;
         const infoo={name,linke,hintss}
-       fetch("http://localhost:3002/addData2",{
+       fetch("https://salty-garden-38529.herokuapp.com/addData2",{
         method: 'POST',
         body: JSON.stringify({infoo}),
         headers: {
@@ -47,7 +47,7 @@ const Admin = () => {
         const hLink=document.getElementById("hLink").value;
         const Idea=document.getElementById("Idea").value;
         const infoo={noteTopic,dates,hLink,Idea}
-       fetch("http://localhost:3002/addData3",{
+       fetch("https://salty-garden-38529.herokuapp.com/addData3",{
         method: 'POST',
         body: JSON.stringify({infoo}),
         headers: {
@@ -67,7 +67,7 @@ const Admin = () => {
         const Linkf=document.getElementById("Linkf").value;
         const how=document.getElementById("how").value;
         const infoo={Topic,datea,Linkf,how}
-       fetch("http://localhost:3002/addData4",{
+       fetch("https://salty-garden-38529.herokuapp.com/addData4",{
         method: 'POST',
         body: JSON.stringify({infoo}),
         headers: {

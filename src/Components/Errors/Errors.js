@@ -6,14 +6,14 @@ const Errors = () => {
     const [err,setErr]=useState([]);
     const [linka,setLink]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:3002/links')
+        fetch('https://salty-garden-38529.herokuapp.com/links')
         .then(res=>res.json())
         .then(data=>{
             setLink(data);
         })
     },[])
     useEffect(()=>{
-        fetch('http://localhost:3002/errors')
+        fetch('https://salty-garden-38529.herokuapp.com/errors')
         .then(res=>res.json())
         .then(data=>{
             setErr(data);
