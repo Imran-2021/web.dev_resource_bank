@@ -7,7 +7,9 @@ import {
 } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import NavBar from './Components/NavBar/NavBar';
+import Resource from "./Components/Resource/Resource";
 import Resources from "./Components/Resources/Resources";
+import Hello from "./FakeData/hello";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
           </Route>
           <Route path="/resources">
            <Resources/>
+          </Route>
+          <Route path="/resource/:idd">
+           <Resource/>
           </Route>
           <Route path="/">
             {/* <Home /> */}

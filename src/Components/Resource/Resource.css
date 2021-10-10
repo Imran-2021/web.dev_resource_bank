@@ -1,0 +1,45 @@
+
+.single-resource{
+    min-height: 75vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(1, 3, 12, 0.6),rgba(1, 2, 7, 0.6)),url(https://media.istockphoto.com/photos/code-programming-for-website-editors-view-picture-id1290492381?b=1&k=20&m=1290492381&s=170667a&w=0&h=NQSXJKhncCP1GLzDkD8KPZsCOh1wldDj5RZbPVJztxQ=); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.single-resource-in{
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    color:red;
+    margin-top: 5%;
+
+}
+.ahover{
+    text-decoration: none;
+}
+.ahover:hover{
+    text-decoration: underline;
+}
+.as{
+    /* margin-top: 5%; */
+   
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+    grid-gap: 5px;
+    /* padding-bottom: 90px; */
+    text-align: justify;
+    /* grid-auto-rows: 200px; */
+    justify-content: space-around;
+    align-content: center;
+
+}
+.ass{
+    margin: 20px;
+    background:#eb4d4b;
+    padding: 15px;
+    color: #130f40;
+    border-radius:5px;
+    word-spacing: 0px;
+}
