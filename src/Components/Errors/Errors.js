@@ -27,7 +27,7 @@ const Errors = () => {
                     </div>
                <div className="lorem1">
                <div className="lorem-inn extra">
-                        <h3>Important links for handle errors</h3>
+                        <h3>Important links</h3>
                     </div>
                     <div className="lorem-inn">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorum ea repellat hic consequuntur nam sint dolor totam quibusdam nisi rerum porro perspiciatis reiciendis doloremque repudiandae omnis sapiente, corrupti nulla!</p>

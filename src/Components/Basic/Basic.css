@@ -1,0 +1,10 @@
+.basic{
+    min-height:100vh;
+    width: 100%;
+    background-color:#17d327;
+}
+.basic-in{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}

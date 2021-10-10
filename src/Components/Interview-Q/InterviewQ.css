@@ -1,0 +1,11 @@
+.interview{
+    min-height:100vh;
+    width: 100%;
+    background-color:#487eb0;
+}
+.interview-in{
+    width: 90%;
+    margin: auto;
+    
+    padding: 10px;
+}

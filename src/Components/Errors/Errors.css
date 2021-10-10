@@ -1,5 +1,5 @@
 .errors{
-    min-height:90vh;
+    min-height:100vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 9, 29, 0.7),rgba(5, 15, 65, 0.9)),url(https://www.howtogeek.com/wp-content/uploads/2018/10/error.png?width=1198&trim=1,1&bg-color=000&pad=1,1);
     background-repeat: no-repeat;

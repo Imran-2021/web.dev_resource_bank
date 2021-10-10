@@ -5,13 +5,17 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import About from "./Components/About/About";
 import Admin from "./Components/Admin/Admin";
+import Basic from "./Components/Basic/Basic";
+import Blogs from "./Components/Blogs/Blogs";
 import Errors from "./Components/Errors/Errors";
 import Header from "./Components/Header/Header";
+import InterviewQ from "./Components/Interview-Q/InterviewQ";
 import NavBar from './Components/NavBar/NavBar';
 import Resource from "./Components/Resource/Resource";
 import Resources from "./Components/Resources/Resources";
-import Hello from "./FakeData/hello";
+import Signn from "./Components/SignIn/Sign";
 
 function App() {
   return (
@@ -27,8 +31,23 @@ function App() {
           <Route path="/admin">
            <Admin/>
           </Route>
+          <Route path="/basic">
+           <Basic/>
+          </Route>
           <Route path="/errors">
            <Errors/>
+          </Route>
+          <Route path="/blogs">
+           <Blogs/>
+          </Route>
+          <Route path="/about">
+           <About/>
+          </Route>
+          <Route path="/login">
+           <Signn/>
+          </Route>
+          <Route path="/inverviewQ">
+           <InterviewQ/>
           </Route>
           <Route path="/resource/:idd">
            <Resource/>

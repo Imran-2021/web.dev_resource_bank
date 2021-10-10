@@ -20,6 +20,7 @@ const Admin = () => {
     }
     return (
         <div className="admin">
+        {/* <div className="">
             <div className="admin-in">
                 <div style={{margin:"10px"}}>
                     <input type="text" id="name" placeholder="name" name="name"/> <br/><br/>
@@ -30,6 +31,110 @@ const Admin = () => {
 
                 </div>
             </div>
+        </div> */}
+        <div className="admins">
+        <div class="wrapper">
+            <div class="title">
+                <h1>Errors and solutions</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                <input type="text"class="input" id="name" placeholder="Error Name" name="name"/>
+                <input type="text"class="input" id="value" placeholder="Solution Link" name="value"/>
+                {/* <input type="text"class="input" id="quantity" placeholder="quantity" name="quantity"/>
+                <input type="text" class="input" placeholder="Subject"/> */}
+                </div>
+                <div class="msg">
+                <textarea placeholder="Hints of solutions"></textarea>
+                <div class="btn" onClick={handleSubmit}>submit</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="title">
+                <h1>Important Links</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                <input type="text" class="input" placeholder="Name"/>
+                <input type="text" class="input" placeholder="Links"/>
+                <input type="text" class="input" placeholder="What for"/>
+                </div>
+                <div class="msg">
+                <textarea placeholder="Message"></textarea>
+                <div class="btn">submit</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="title">
+                <h1>Blogs</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                <input type="text" class="input" placeholder="Name"/>
+                <input type="text" class="input" placeholder="Email Address"/>
+                <input type="text" class="input" placeholder="Phone"/>
+                <input type="text" class="input" placeholder="Subject"/>
+                </div>
+                <div class="msg">
+                <textarea placeholder="Message"></textarea>
+                <div class="btn">submit</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="title">
+                <h1>nterview-Q</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                <input type="text" class="input" placeholder="Name"/>
+                <input type="text" class="input" placeholder="Email Address"/>
+                <input type="text" class="input" placeholder="Phone"/>
+                <input type="text" class="input" placeholder="Subject"/>
+                </div>
+                <div class="msg">
+                <textarea placeholder="Message"></textarea>
+                <div class="btn">submit</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="title">
+                <h1>Basic</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                <input type="text" class="input" placeholder="Name"/>
+                <input type="text" class="input" placeholder="Email Address"/>
+                <input type="text" class="input" placeholder="Phone"/>
+                <input type="text" class="input" placeholder="Subject"/>
+                </div>
+                <div class="msg">
+                <textarea placeholder="Message"></textarea>
+                <div class="btn">submit</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="title">
+                <h1>Resources</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                <input type="text" class="input" placeholder="Name"/>
+                <input type="text" class="input" placeholder="Email Address"/>
+                <input type="text" class="input" placeholder="Phone"/>
+                <input type="text" class="input" placeholder="Subject"/>
+                </div>
+                <div class="msg">
+                <textarea placeholder="Message"></textarea>
+                <div class="btn">submit</div>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     );
 };
