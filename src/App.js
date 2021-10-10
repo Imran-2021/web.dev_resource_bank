@@ -5,6 +5,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Admin from "./Components/Admin/Admin";
+import Errors from "./Components/Errors/Errors";
 import Header from "./Components/Header/Header";
 import NavBar from './Components/NavBar/NavBar';
 import Resource from "./Components/Resource/Resource";
@@ -21,6 +23,12 @@ function App() {
           </Route>
           <Route path="/resources">
            <Resources/>
+          </Route>
+          <Route path="/admin">
+           <Admin/>
+          </Route>
+          <Route path="/errors">
+           <Errors/>
           </Route>
           <Route path="/resource/:idd">
            <Resource/>

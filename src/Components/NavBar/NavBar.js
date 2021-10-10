@@ -23,14 +23,14 @@ const NavBar = () => {
                 <ul onClick={hidemenu}>
                     <li><Link to="/">HOME</Link></li>
                     <li><Link to="/resources">RESOURCES</Link></li>
-                    <li><Link to="/err">ERRORS</Link></li>
+                    <li><Link to="/errors">ERRORS</Link></li>
                     <li><Link to="/contributors">INTERVIEW-Q</Link></li>
                     <li><Link to="/blogs">BLOGS</Link></li>
                     <li><Link to="/about">ABOUT</Link></li>
                     <li><Link to="/about">BASIC</Link></li>
                     {/* <li><Link to="/contact">CONTACT</Link></li> */}
                     <li><Link to="/login">SIGN IN</Link></li>
-                    <li><Link to="/contributors">CONTRIBUTORS</Link></li>
+                    <li><Link to="/admin">ADMIN</Link></li>
                 </ul>
             </div>
             {/* <img style={{width:"60px"}} src="Images/logofortitle.png" alt="" /> */}

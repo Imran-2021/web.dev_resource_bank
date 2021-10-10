@@ -33,10 +33,12 @@
     /* grid-auto-rows: 200px; */
     justify-content: space-around;
     align-content: center;
-
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .ass{
-    margin: 20px;
+    
     background:#eb4d4b;
     padding: 15px;
     color: #130f40;

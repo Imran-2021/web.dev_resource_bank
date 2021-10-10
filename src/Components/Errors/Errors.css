@@ -1,0 +1,66 @@
+.errors{
+    min-height:90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(9, 9, 29, 0.7),rgba(5, 15, 65, 0.9)),url(https://www.howtogeek.com/wp-content/uploads/2018/10/error.png?width=1198&trim=1,1&bg-color=000&pad=1,1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.errors-in{
+    width:90%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 35px;
+    /* padding-bottom: 90px; */
+    text-align: justify;
+    /* grid-auto-rows: 200px; */
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 22px; 
+    padding-bottom: 20px; 
+    border-radius: 10px;
+ 
+}
+
+.lorem{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 15px;
+    /* padding-bottom: 90px; */
+    text-align: justify;
+    /* grid-auto-rows: 150px; */
+    justify-content: space-around;
+    align-content: flex-start;
+  
+}
+.lorem1{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 15px;
+    /* padding-bottom: 90px; */
+    text-align: justify;
+    /* grid-auto-rows: 150px; */
+    justify-content: space-around;
+    align-content: flex-start;
+  
+}
+.lorem-in{
+    background: #738c9d;
+    padding: 20px;
+    color: #000000;
+    font-size: 22px;
+    border-radius: 4px;
+}
+.lorem-inn {
+    background: #738c9d;
+    padding: 20px;
+    color: #000000;
+    font-size: 22px;
+    border-radius: 4px;
+}
+.extra{
+    text-align: center;
+    text-shadow: -3px 5px 8px rgba(208,174,174,0.6);
+}

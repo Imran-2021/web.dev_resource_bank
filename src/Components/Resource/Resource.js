@@ -22,7 +22,7 @@ const Resource = () => {
             <p>TOPIC - {idd}</p>
            
             <h4>{data.description}</h4>
-            <h3>Basic Key- </h3>
+            <p>How to learn, </p>
             {/* <p className="as">{data.keywords}</p> */}
            <div className="as">
            {
@@ -33,17 +33,19 @@ const Resource = () => {
             </div>)
             }
            </div>
-            <h3>Documentations -</h3>
-            {/* <p>{data.documentations[0].link ||"lorem"}</p> */}
-           {/* <p>{data?.documentations?.[0]}</p> */}
+            <p>Documentation Links -</p>
+            <div className="document">
+
+           
            {
                data?.documentations?.map((x,y)=><div>
-                   <p>{y+1} <FontAwesomeIcon style={{color:"black",fontSize:"15px",color:"blue"}} icon={faArrowRight} /> <a className='ahover' target="_blank" rel="noreferrer" href={x}>{x}</a></p>
+                   <p><FontAwesomeIcon style={{color:"black",fontSize:"15px",color:"blue"}} icon={faArrowRight} /> <a className='ahover' target="_blank" rel="noreferrer" href={x}>link</a></p>
                    
                </div>)
            }
-            <h3>Tutorial - </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, cupiditate? Accusamus, ab quasi vero possimus fuga repellat ipsam numquam enim, provident perferendis explicabo! Quaerat quasi nostrum maxime repellendus, quisquam sed?</p>
+            </div>
+            <p>Tutorial links - </p>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, cupiditate? Accusamus, ab quasi vero possimus fuga repellat ipsam numquam enim, provident perferendis explicabo! Quaerat quasi nostrum maxime repellendus, quisquam sed?</h4>
             </div>
         </section >
     );
